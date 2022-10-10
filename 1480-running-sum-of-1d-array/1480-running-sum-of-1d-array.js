@@ -4,10 +4,10 @@
  */
 var runningSum = function(nums) {
   let sum=0
-  let newNums=[]
-  nums.forEach((item)=>{
+
+  nums.forEach((item,index)=>{
       sum=sum+item
-      newNums.push(sum)
+      nums[index]=(sum)
   })
-    return newNums
+    return nums
 };
