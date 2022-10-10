@@ -4,12 +4,12 @@
  */
 var getConcatenation = function(nums) {
 
-  nums.length>1000 &&(
-  nums.forEach((item,index)=>{
-        if(item<1 && item>1000)
-            return
-    })
-  )
+  // nums.length>1000 &&(
+  // nums.forEach((item,index)=>{
+  //       if(item<1 && item>1000)
+  //           return
+  //   })
+  // )
   nums = [...nums,...nums]
      return nums
 };
