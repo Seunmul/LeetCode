@@ -3,11 +3,12 @@
  * @return {number[]}
  */
 var runningSum = function(nums) {
-  let sum=0
+
 
   nums.forEach((item,index)=>{
-      sum=sum+item
-      nums[index]=(sum)
+      
+      if(index>0)
+      nums[index]=nums[index-1]+item
   })
     return nums
 };
