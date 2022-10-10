@@ -11,6 +11,6 @@ var getConcatenation = function(nums) {
             return
     })
 
-  const newNums = [...nums,...nums]
-     return newNums
+  nums = [...nums,...nums]
+     return nums
 };
